@@ -13,7 +13,7 @@
       <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
           <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
               <span class="sr-only">切换导航</span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
@@ -21,7 +21,7 @@
             </button>
             <a class="navbar-brand a1" href="#">某管理系统</a>
           </div>
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <div class="collapse navbar-collapse" id="navbar">
             <ul class="nav navbar-nav">
               <li><a href="#">首页</a></li>
               <li class="dropdown">
@@ -49,7 +49,7 @@
         </div>
       </nav>
       <div class="row">
-        <div class="col-sm-3 col-md-2 sidebar">
+        <div class="hidden-xs col-sm-3 col-md-2 sidebar">
           <ul class="nav nav-sidebar">
             <br>
             <li class="active"><a href="#">首页<span class="sr-only">(current)</span></a></li><br>
@@ -66,12 +66,12 @@
       <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
           <h1 class="page-header">管理控制台</h1>
          <p>
-        <button class="btn btn-default" type="button">操作1</button>
-        <button class="btn btn-primary" type="button">操作2</button>
-        <button class="btn btn-success" type="button">操作3</button>
-        <button class="btn btn-info" type="button">操作4</button>
-        <button class="btn btn-warning" type="button">操作5</button>
-        <button class="btn btn-danger" type="button">操作6</button>
+        <button class="btn btn-lg btn-default" type="button">操作1</button>
+        <button class="btn btn-lg btn-primary" type="button">操作2</button>
+        <button class="btn btn-lg btn-success" type="button">操作3</button>
+        <button class="btn btn-lg btn-info" type="button">操作4</button>
+        <button class="btn btn-lg btn-warning" type="button">操作5</button>
+        <button class="btn btn-lg btn-danger" type="button">操作6</button>
       </p>
       <div class="row">
       <div class=" col-md-6 col-sm-12">
@@ -98,18 +98,13 @@
         <h3 class="panel-title ">我的任务</h3>
       </div>
       <div class="panel-body">
-        <li class="list-group-item">
-        <span class="badge">42</span>
-        订单审批
-      </li>
-      <li class="list-group-item">
-        <span class="badge">20</span>
-        收款确认
-      </li>
-      <li class="list-group-item">
-        <span class="badge">10</span>
-        付款确认
-      </li>
+      	<ul class="nav nav-pills nav-stacked" role="tablist">
+        <li role="presenttation">
+      <a href="#" class="alert alert-info">订单审批 <span class="badge pull-right">42</span> </a></li>
+    <li role="presenttation">
+      <a href="#" class="alert alert-info">收款确认 <span class="badge pull-right">20</span> </a></li>
+    <li role="presenttation">
+      <a href="#" class="alert alert-info">付款确认<span class="badge pull-right">10</span> </a></li></ul>
       </div>
             </div>
           </div></div>
@@ -164,14 +159,13 @@
         <h3 class="panel-title ">工作进度</h3>
       </div>
       <div class="panel-body">
-          <a class="btn btn-primary" role="button" href="#">水井挖掘工程</a><br>
+         <span class="label label-primary zihao">水井挖掘工程</span>
          <div class="progress">
   <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
     
   </div>
 </div>
-      <a class="btn btn-danger" role="button" href="#">基建工程</a><br>
-           
+     <span class="label label-danger zihao">基建工程</span>
       <div class="progress">
       <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
         
